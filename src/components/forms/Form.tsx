@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import styles from './Form.module.css'
-import { register, login, get } from '@/hooks/autenticate'
+import { register, login } from '@/hooks/autenticate'
 
 export const FormLogin = () => {
     const [email, setEmail] = useState('')
@@ -24,7 +24,6 @@ export const FormLogin = () => {
                 <p>Nao Possui uma conta? <span>Register</span></p>
                 <button onClick={handleChange}>Login</button>
             </div>
-            <button onClick={get}>teste</button>
         </div>
     )
 }

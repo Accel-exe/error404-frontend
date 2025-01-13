@@ -25,7 +25,6 @@ export const login = async (email: string, password: string): Promise<void> => {
 export const get = async (): Promise<void> => {
     try {
         const response = await axios.get(url + '/user', {withCredentials: true})
-        console.log( document.cookie)
         console.log(response.data)
     }catch(erro) {
         console.log("nao foi possivel fazer a requisiçao devido ao error: " + erro)
